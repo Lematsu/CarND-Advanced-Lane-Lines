@@ -37,11 +37,11 @@ Please see the sample image and video I created in "./advanced_lane_lines/advanc
 [image1]: ./camera_cal/calibration1.jpg "Original chessboard"
 [image2]: ./output_images/Undistort/undistort_chessboard_12.png "Undistorted chessboard"
 [image3]: ./test_images/test1.jpg "Original image"
-[image4]: ./test_images/undistort_lines_0.png "Undistorted image"
+[image4]: ./output_images/Undistort/undistort_lines_0.png "Undistorted image"
 [image5]: ./output_images/Perspective/test_case_source.png "Original image"
 [image6]: ./output_images/Perspective/test_case_warped.png "Birds-Eye image"
 [image7]: ./test_images/test1.jpg "Original image"
-[image8]: ./output_images/ColorBianry/color_lines_0.png "Binary image"
+[image8]: ./output_images/ColorBinary/color_lines_0.png "Binary image"
 [image9]: ./output_images/ColorBinary/perspective_and_binarize_5.png
 [image10]: ./output_images/LaneCurvature/test_curvature_withline.png
 [image11]: ./test_images/test1.jpg
