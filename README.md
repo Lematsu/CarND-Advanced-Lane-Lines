@@ -31,7 +31,7 @@ I have written this pipeline described in "advanced_lane_lines/advanced_lane_lin
 
 Please see the sample image and video I created in "./advanced_lane_lines/advanced_lane_lines.ipynb" below.
 
-[//]:
+[//]: # (Image References)
 
 
 [image1]: ./camera_cal/calibration1.jpg "Original chessboard"
