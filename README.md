@@ -30,7 +30,23 @@ In order to achieve this, we have designed a softare pipeline described below:
 I have written this pipeline described in "advanced_lane_lines/advanced_lane_lines.ipynb".
 
 Please see the sample image and video I created in "./advanced_lane_lines/advanced_lane_lines.ipynb" below.
-[image0]: ./output_images/curvature_0.png "Lane Highlighted and Info displayed"
+
+[//]:
+
+
+[image1]: ./camera_cal/calibration1.jpg "Original chessboard"
+[image2]: ./output_images/Undistort/undistort_chessboard_12.png "Undistorted chessboard"
+[image3]: ./test_images/test1.jpg "Original image"
+[image4]: ./test_images/undistort_lines_0.png "Undistorted image"
+[image5]: ./output_images/Perspective/test_case_source.png "Original image"
+[image6]: ./output_images/Perspective/test_case_warped.png "Birds-Eye image"
+[image7]: ./test_images/test1.jpg "Original image"
+[image8]: ./output_images/ColorBianry/color_lines_0.png "Binary image"
+[image9]: ./output_images/ColorBinary/perspective_and_binarize_5.png
+[image10]: ./output_images/LaneCurvature/test_curvature_withline.png
+[image11]: ./test_images/test1.jpg
+[image12]: ./output_images/LaneCurvature/curvature_0.png
+
 [video0]: ./output_video/processed_project_video.mp4 "Video format"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
@@ -74,18 +90,27 @@ From the above calibration, the following images show the original distorted and
 Here is an example case for distortion correctness using chessboards.
 
 This is the original distorted chessboard image.
-[image1]: ./camera_cal/calibration1.jpg "Original chessboard"
+
+
+
+![alt_text][image1]
 
 This is the undistorted chessboard image.
-[image2]: ./output_images/Undistort/undistort_chessboard_12.png "Undistorted chessboard"
+
+
+![alt_text][image2]
 
 This is the original distorted image. 
-[image3]: ./test_images/test1.jpg "Original image"
+
+
+
+![alt_text][image3]
 
 This is the processed undistorted image.
-[image4]: ./test_images/undistort_lines_0.png "Undistorted image"
 
 
+
+![alt_text][image4]
 
 #### 2. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -120,10 +145,10 @@ This resulted in the following source and destination points:
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
-[image5]: ./output_images/Perspective/test_case_source.png "Original image"
+![alt_text][image5]
 
-[image6]: ./output_images/Perspective/test_case_warped.png "Birds-Eye image"
 
+![alt_text][image6]
 
 #### 3. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
@@ -155,9 +180,9 @@ The `__reduce_binary_noise` function was be possibel thanks to OpenCV's `filter2
 
 Here were example images on color thresholding described above.
 
-[image7]: ./test_images/test1.jpg "Original image"
+![alt_text][image7]
 
-[image8]: ./output_images/ColorBianry/color_lines_0.png "Binary image"
+![alt_text][image8]
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
@@ -248,11 +273,14 @@ On a side note, within the method `self._lane_detect_init` was where `self.lane_
 Now, `self._lane_detect_next` would be very similar to `self._lane_detect_init`. The main difference would be that it would not have to perform the sliding windows algorithm because the valid lane indexes would already be stored in `self.left_lane` and `self.right_lane`. This would mean that it would not have to perform steps 1-3 mentioned above, and only need to run steps 4-6.
 
 Here would be an example source image before the process.
-[image9]: ./output_images/ColorBinary/perspective_and_binarize_5.png
+
+
+![alt_text][image9]
 
 This would be an example of what the process detects.
-[image10]: ./output_images/LaneCurvature/test_curvature_withline.png
 
+
+![alt_text][image10]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -347,10 +375,14 @@ In `_combine_img` that took parameters new image and source image, I copied each
 ```
 
 Please see the sample source image below:
-[image11]: ./test_images/test1.jpg
+
+
+![alt_text][image11]
 
 Please see the processed image below:
-[image12]: ./output_images/LaneCurvature/curvature_0.png
+
+
+![alt_text][image12]
 
 ---
 
