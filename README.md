@@ -49,10 +49,6 @@ Please see the sample image and video I created in "./advanced_lane_lines/advanc
 
 [video0]: ./output_video/processed_project_video.mp4 "Video format"
 
-## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
-
-### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
-
 
 ### Camera Calibration
 
